@@ -9,14 +9,23 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-
-@Component
-export default class Card extends Vue {
-  @Prop() private imageUrl!: string;
-  @Prop() private title!: string;
-  @Prop() private description!: string;
-}
+import Vue from "vue";
+export default Vue.extend({
+  props: {
+    imageUrl: {
+      required: true,
+      type: String,
+    },
+    title: {
+      required: true,
+      type: String,
+    },
+    description: {
+      required: true,
+      type: String,
+    },
+  },
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

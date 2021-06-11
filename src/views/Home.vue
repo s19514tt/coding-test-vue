@@ -12,11 +12,12 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
 import { mapState } from "vuex";
 import { Photo } from "../store/index";
 import Card from "@/components/Card.vue";
 
-export default {
+export default Vue.extend({
   name: "Home",
   components: {
     Card,
@@ -28,7 +29,7 @@ export default {
     photos: (state: { photos: Photo[] }) =>
       state.photos.sort((a, b) => a.displayOrder - b.displayOrder),
   }),
-};
+});
 </script>
 
 <style lang="sass">
