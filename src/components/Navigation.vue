@@ -1,0 +1,44 @@
+<template>
+  <div class="nav">
+    <div class="nav-items">
+      <router-link to="/"
+        ><img class="nav-icon" src="../assets/home.svg"
+      /></router-link>
+      <router-link to="/"
+        ><img class="nav-icon" src="../assets/chat.svg"
+      /></router-link>
+      <router-link to="/"
+        ><img class="nav-icon" src="../assets/setting.svg"
+      /></router-link>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from "vue-property-decorator";
+
+@Component
+export default class Navigation extends Vue {
+  @Prop() private imageUrl!: string;
+  @Prop() private title!: string;
+  @Prop() private description!: string;
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="sass">
+.nav
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 70px
+    background-color: white
+    &-icon
+        margin-top: 11px
+    &-items
+        width: 264px
+        margin: auto
+        display: flex
+        justify-content: space-between
+</style>
