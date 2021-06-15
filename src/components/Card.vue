@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img class="card-image" :src="imageUrl" />
+    <img class="card-image" :src="`${imageUrl}?fm=webp&w=500`" />
     <div class="card-text">
       <p class="card-text-title">{{ title }}</p>
       <p class="card-text-description">{{ description }}</p>
