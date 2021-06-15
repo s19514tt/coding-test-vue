@@ -15,9 +15,9 @@ export default {
 };
 </script>
 <style lang="sass">
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css)
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap')
 #app
-  font-family: Noto Sans JP
+  font-family: 'Noto Sans JP', sans-serif
   font-style: normal
   font-weight: normal
   background: #f5f5f5
