@@ -40,5 +40,10 @@ export default new Vuex.Store({
       context.commit("increment", res.data.contents);
     },
   },
+  getters: {
+    getPhotos: (state) => {
+      return state.photos.sort((a, b) => a.displayOrder - b.displayOrder);
+    },
+  },
   modules: {},
 });

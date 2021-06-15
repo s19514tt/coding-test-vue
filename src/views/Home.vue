@@ -2,7 +2,7 @@
   <div class="home">
     <p class="page-title">投稿一覧</p>
     <card
-      v-for="photo in photos"
+      v-for="photo in getPhotos"
       :title="photo.title"
       :imageUrl="photo.image.url"
       :description="photo.description"
@@ -13,8 +13,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { mapState } from "vuex";
-import { Photo } from "../store/index";
+import { mapGetters } from "vuex";
 import Card from "@/components/Card.vue";
 
 export default Vue.extend({
@@ -25,10 +24,7 @@ export default Vue.extend({
   mounted: function (): void {
     this.$store.dispatch("getPhotos");
   },
-  computed: mapState<{ photos: Photo[] }>({
-    photos: (state: { photos: Photo[] }) =>
-      state.photos.sort((a, b) => a.displayOrder - b.displayOrder),
-  }),
+  computed: { ...mapGetters(["getPhotos"]) },
 });
 </script>
 
