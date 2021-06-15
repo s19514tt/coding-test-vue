@@ -20,11 +20,11 @@ export default {
   font-family: 'Noto Sans JP', sans-serif
   font-style: normal
   font-weight: normal
-  background: #f5f5f5
+  background: $background-color
   margin: auto
-  padding: none
-  width: 375px
+  width: 100%
+  max-width: 375px
 body
-  margin-top: none !important
-  background: #f5f5f5
+  background: $background-color
+  margin: 0px
 </style>
