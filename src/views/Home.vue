@@ -1,6 +1,6 @@
 <template>
-  <div id="home">
-    <p id="page-title">投稿一覧</p>
+  <div class="home">
+    <p class="page-title">投稿一覧</p>
     <card
       v-for="photo in photos"
       :title="photo.title"
@@ -33,7 +33,7 @@ export default Vue.extend({
 </script>
 
 <style lang="sass">
-#page-title
+.page-title
   width: auto
   height: 32px
   left: 20px
@@ -44,6 +44,6 @@ export default Vue.extend({
   line-height: 32px
   letter-spacing: 0.06em
   color: #000000
-#home
+.home
   margin-bottom: 94px
 </style>
