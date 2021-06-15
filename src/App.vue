@@ -19,6 +19,8 @@ export default {
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css)
 #app
   font-family: Noto Sans JP
+  font-style: normal
+  font-weight: normal
   background: #f5f5f5
   margin: auto
   padding: none

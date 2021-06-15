@@ -39,12 +39,9 @@ export default Vue.extend({
   left: 20px
   top: 36px
   margin: 36px 20px 0px
-  font-family: Noto Sans JP
-  font-style: normal
   font-weight: 900
   font-size: 22px
   line-height: 32px
-  /* identical to box height */
   letter-spacing: 0.06em
   color: #000000
 #home
