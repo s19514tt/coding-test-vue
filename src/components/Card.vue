@@ -44,7 +44,6 @@ export default Vue.extend({
       font-weight: 900
       font-size: 18px
       line-height: 26px
-      display: flex
       align-items: center
       letter-spacing: 0.06em
       color: #000000
