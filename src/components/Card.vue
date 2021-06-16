@@ -1,6 +1,13 @@
 <template>
   <div class="card">
-    <img class="card-image" :src="`${imageUrl}?fm=webp&w=500`" />
+    <picture>
+      <source
+        class="card-image"
+        :srcset="`${imageUrl}?fm=webp&w=500`"
+        type="image/webp"
+      />
+      <img class="card-image" :srcset="`${imageUrl}?w=500`" />
+    </picture>
     <div class="card-text">
       <p class="card-text-title">{{ title }}</p>
       <p class="card-text-description">{{ description }}</p>
@@ -47,7 +54,7 @@ export default Vue.extend({
       align-items: center
       letter-spacing: 0.06em
       color: #000000
-      margin: 0px 0px
+      margin: 0px
     &-description
       margin: 6px 0px 0px 0px
       font-size: 13px
