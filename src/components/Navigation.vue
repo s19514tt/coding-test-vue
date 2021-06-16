@@ -21,6 +21,7 @@
   width: 100%
   height: 70px
   background-color: white
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.04)
   &-icon
     margin-top: 11px
   &-items
