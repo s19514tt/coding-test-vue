@@ -6,7 +6,7 @@
         :srcset="`${imageUrl}?fm=webp&w=500`"
         type="image/webp"
       />
-      <img class="card-image" :srcset="`${imageUrl}?w=500`" />
+      <img class="card-image" :srcset="`${imageUrl}?w=500`" :alt="title" />
     </picture>
     <div class="card-text">
       <p class="card-text-title">{{ title }}</p>
