@@ -41,7 +41,7 @@ export default Vue.extend({
   margin: 16px 20px
   width: 335px
   height: 100%
-  background: #FFFFFF
+  background: $white
   border-radius: 10px
   font-size: 0px
   &-text
@@ -53,7 +53,7 @@ export default Vue.extend({
       line-height: 26px
       align-items: center
       letter-spacing: 0.06em
-      color: #000000
+      color: $black
       margin: 0px
     &-description
       margin: 6px 0px 0px 0px
@@ -61,7 +61,7 @@ export default Vue.extend({
       line-height: 19px
       text-align: justify
       letter-spacing: 0.01em
-      color: #000000
+      color: $black
   &-image
     width: 335px
     height: 160px

@@ -36,7 +36,7 @@ export default Vue.extend({
   font-size: 22px
   line-height: 32px
   letter-spacing: 0.06em
-  color: #000000
+  color: $black
 .home
   margin-bottom: 94px
 </style>
