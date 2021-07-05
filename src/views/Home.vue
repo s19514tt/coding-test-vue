@@ -39,4 +39,5 @@ export default Vue.extend({
   color: $black
 .home
   margin-bottom: 94px
+  padding: 0px 20px
 </style>

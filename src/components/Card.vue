@@ -38,11 +38,13 @@ export default Vue.extend({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="sass">
 .card
-  margin: 16px 20px
-  width: 335px
+  margin: 16px 0px
+  width: 100%
+  max-width: 335px
   height: 100%
   background: $white
   border-radius: 10px
+  overflow: hidden
   &-text
     padding: 10px 12px
     border-radius: 10px
@@ -62,7 +64,8 @@ export default Vue.extend({
       letter-spacing: 0.01em
       color: $black
   &-image
-    width: 335px
+    width: 100%
+    max-width: 335px
     height: 160px
     object-fit: cover
     object-position: 0% 0%
