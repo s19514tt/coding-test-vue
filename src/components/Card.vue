@@ -43,7 +43,6 @@ export default Vue.extend({
   height: 100%
   background: $white
   border-radius: 10px
-  font-size: 0px
   &-text
     padding: 10px 12px
     border-radius: 10px
@@ -68,4 +67,5 @@ export default Vue.extend({
     object-fit: cover
     object-position: 0% 0%
     border-radius: 10px 10px 0px 0px
+    vertical-align: bottom
 </style>
